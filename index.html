@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Titulo</title>
+    <script src="script/index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form>
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo" id="mulher" value="mulher">
+            <label for="mulher">Mulher</label>
+            <input type="radio" name="sexo" id="homem" value="homem">
+            <label for="homem">Homem</label>
+            <br>
+            <br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" name="idade" id="idade" placeholder="Ex: 23" required>
+            <br>
+            <br>
+
+            <label for="peso">Peso:</label><br>
+            <input type="number" name="peso" id="peso" placeholder="Ex: 77.3" required><br><br>
+
+            <label for="altura">Altura em cm:</label><br>
+            <input type="number" name="altura" id="altura" placeholder="Ex: 175" required><br><br>
+
+            <label for="exercicio">Atividade Física diária:</label><br>
+            <select name="exercicio" id="exercicio">
+                <option value="leve">Leve</option>
+                <option value="moderada">Moderada</option>
+                <option value="intensa">Intensa</option>
+            </select>
+            <br><br>
+            <button class="calcular">Calcular</button>
+
+            <div class="boxResp">
+                <p id="resp"></p>
+            </div>
+        </form>
+
+
+    </main>
+</body>
+
+</html>
