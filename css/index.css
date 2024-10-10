@@ -26,13 +26,14 @@ main {
 
 form {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     margin-left: 50px;
     width: 250px;
 }
+
 .informacoes{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .informacoes > input {
     padding: 3px 2px;
@@ -44,4 +45,7 @@ form {
 .btn-calcular{
     background-color: #E6A007;
     border: none;
+}
+#exercicio{
+    border-radius: 6px;
 }
