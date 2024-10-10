@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+main {
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    background-image: url(/img/fundo.jpeg);
+    color: #E6A007;
+    width: 600px;
+    height: 500px;
+    font-weight: bold;
+    border-radius:20px ;
+    gap: 60px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-left: 50px;
+    width: 250px;
+}
+.informacoes{
+    display: flex;
+    gap: 10px;
+}
+.informacoes > input {
+    padding: 3px 2px;
+    width: 63px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-calcular{
+    background-color: #E6A007;
+    border: none;
+}
