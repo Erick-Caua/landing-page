@@ -15,7 +15,7 @@ main {
 .box-container {
     display: flex;
     align-items: center;
-    background-image: url(/img/fundo.jpeg);
+    background-image: url(../img/fundo.jpeg);
     color: #E6A007;
     width: 600px;
     height: 500px;
