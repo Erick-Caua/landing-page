@@ -17,11 +17,12 @@ main {
     display: flex;
     align-items: center;
     background-image: url(../img/fundo.jpeg);
+    overflow: hidden;
     color: #E6A007;
     width: 600px;
     height: 500px;
     font-weight: bold;
-    border-radius:20px ;
+    border-radius:25px ;
     gap: 40px;
 }
 
