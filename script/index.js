@@ -47,4 +47,13 @@ calcular.addEventListener("click", (e) => {
 
 })
 
+function bloquearSinais(e) {
+    const char = String.fromCharCode(e.which);
+    
+    // Verificar se o caractere não é um número de 0 a 9
+    if (!/[0-9]/.test(char)) {
+      return false; // Bloqueia a inserção de qualquer caractere que não seja numérico
+    }
+  }
+
 

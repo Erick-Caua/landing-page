@@ -17,22 +17,22 @@
             <form>
                 <div>
                     <label>Sexo:</label>
-                    <input type="radio" name="sexo" id="mulher" value="mulher">
+                    <input type="radio" inputmode="numeric" name="sexo" id="mulher" value="mulher">
                     <label for="mulher">Mulher</label>
                     <input type="radio" name="sexo" id="homem" value="homem">
                     <label for="homem">Homem</label>
                 </div>
                 <div class="informacoes">
                     <label for="idade">Idade:</label>
-                    <input type="number" name="idade" id="idade" placeholder="Ex: 23">
+                    <input type="number" inputmode="numeric" name="idade" id="idade" placeholder="Ex: 23" onkeypress="return bloquearSinais(event)">
                 </div>
                 <div class="informacoes">
                     <label for="peso">Peso:</label>
-                    <input type="number" name="peso" id="peso" placeholder="Ex: 77.3" >
+                    <input type="number" inputmode="numeric" name="peso" id="peso" placeholder="Ex: 77.3" >
                 </div>
                 <div class="informacoes">
                     <label for="altura">Altura:</label>
-                    <input type="number" name="altura" id="altura" placeholder="Ex: 175">
+                    <input type="number" inputmode="numeric" name="altura" id="altura" placeholder="Ex: 175">
                 </div>
                 <div>
                     <label for="exercicio">Atividade:</label>

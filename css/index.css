@@ -40,6 +40,13 @@ form {
     width: 63px;
     border-radius: 6px;
     border: none;
+
+}
+
+.informacoes > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .btn-calcular{
