@@ -56,4 +56,18 @@ function bloquearSinais(e) {
     }
   }
 
+  function bloquearSinaisPeso(e) {
+    const char = String.fromCharCode(e.which);
+    
+    // Verificar se o caractere é um número de 0 a 9 ou um ponto decimal
+    if (!/[0-9.]/.test(char)) {
+      return false; // Bloqueia a inserção de qualquer caractere que não seja numérico ou ponto
+    }
+  
+    // Verificar se já existe um ponto decimal no campo (para evitar múltiplos pontos)
+    if (char === '.' && e.target.value.includes('.')) {
+      return false; // Bloqueia se já houver um ponto no valor
+    }
+  }
+
 
