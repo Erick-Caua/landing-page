@@ -132,6 +132,10 @@ input::-webkit-inner-spin-button{
     border-radius: 6px;
 }
 
+.boxResp{
+  margin: 80px 0 80px 0;
+}
+
 @media(max-width: 425px){
   .box-container{
     width: 300px;

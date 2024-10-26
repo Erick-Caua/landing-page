@@ -27,17 +27,17 @@ calcular.addEventListener("click", (e) => {
             taxaMetabolica = 447.593 + (9.247 * peso) + (3.096 * altura) - (4.330 * idade)
         }
 
-        tbm.textContent = `Sua taxa Metabolica é ${taxaMetabolica.toFixed(3)} `;
+        tbm.textContent = `${taxaMetabolica.toFixed(3)} `;
         switch (atividadeFisica) {
             case "leve":
                 gastoCalorico = taxaMetabolica * 1.55
-                return gastoCal.textContent = `Seu gasto Calórico é ${gastoCalorico.toFixed(3)} `;
+                return gastoCal.textContent = `${gastoCalorico.toFixed(3)} `;
             case "moderada":
                 gastoCalorico = taxaMetabolica * 1.84
-                return gastoCal.textContent = `Seu gasto Calórico é ${gastoCalorico.toFixed(3)} `;
+                return gastoCal.textContent = `${gastoCalorico.toFixed(3)} `;
             case "intensa":
                 gastoCalorico = taxaMetabolica * 2.2
-                return gastoCal.textContent = `Seu gasto Calórico é ${gastoCalorico.toFixed(3)} `;
+                return gastoCal.textContent = `${gastoCalorico.toFixed(3)} `;
         }
 
     }
