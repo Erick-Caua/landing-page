@@ -6,24 +6,22 @@ body {
 }
 
 main {
-    width: 700px;
+    width: 100wh;
     height: 100vh;
-    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .box-container {
     display: flex;
     align-items: center;
     background-image: url(../img/fundo.jpeg);
-    overflow: hidden;
     color: #E6A007;
     width: 600px;
     height: 500px;
     font-weight: bold;
     border-radius:25px ;
-    gap: 40px;
 }
 
   .mydict div {
@@ -45,16 +43,16 @@ main {
   }
   
   #mulher:checked + span {
-    box-shadow: 0 0 0 0.0625em #ed00d9;
+    box-shadow: 0 0 0 0.0625em #E6A007;
     background-color: #dee7ff;
     z-index: 1;
-    color: #ed00d9;
+    color: #E6A007;
   }
   #homem:checked + span {
-    box-shadow: 0 0 0 0.0625em #0043ed;
+    box-shadow: 0 0 0 0.0625em #E6A007;
     background-color: #dee7ff;
     z-index: 1;
-    color: #0043ed;
+    color: #E6A007;
   }
   
   label span {
@@ -116,12 +114,34 @@ input::-webkit-inner-spin-button{
     margin: auto;
 }
 
+.atividade{
+  cursor: pointer;
+}
+
 .btn-calcular{
     background-color: #E6A007;
     border: none;
+    width: 200px;
+    height: 25px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 3px;
 }
-
 
 #exercicio{
     border-radius: 6px;
+}
+
+@media(max-width: 425px){
+  .box-container{
+    width: 300px;
+    display: grid;
+  }
+    form{
+      margin: 90px auto 0;
+    }
+  .boxResp{
+    margin: auto;
+  }
+
 }
