@@ -1,8 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: darkgrey;
-
 }
 
 main {
@@ -16,7 +20,7 @@ main {
 .box-container {
     display: flex;
     align-items: center;
-    background-image: url(../img/fundo.jpeg);
+    background-image: url(../img/600x500.png);
     color: #E6A007;
     width: 600px;
     height: 500px;
@@ -59,7 +63,7 @@ main {
     display: block;
     cursor: pointer;
     background-color: #fff;
-    padding: 0.375em .75em;
+    padding: 0.2em .55em;
     position: relative;
     margin-left: .0625em;
     box-shadow: 0 0 0 0.0625em #b5bfd9;
@@ -79,7 +83,7 @@ main {
   
 form {
     display: grid;
-    gap: 20px;
+    gap: 15px;
     margin-left: 50px;
     width: 250px;
 }
@@ -104,14 +108,13 @@ form {
     border: none;
 }
 
-.informacoes > input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 .exercicio{
     margin: auto;
+}
+
+.objetivo{
+  margin: auto;
 }
 
 .atividade{
@@ -128,24 +131,55 @@ input::-webkit-inner-spin-button{
     border-radius: 3px;
 }
 
+.boxResp{
+  width: 200px;
+  height: 120px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 #exercicio{
     border-radius: 6px;
 }
 
-.boxResp{
-  margin: 80px 0 80px 0;
+#objetivo{
+  border-radius: 6px;
+  
 }
+
 
 @media(max-width: 425px){
   .box-container{
     width: 300px;
     display: grid;
+    background-image: url(../img/BODY.png);
+    align-items: normal;
   }
+
+  
     form{
-      margin: 90px auto 0;
+      margin: 90px 0 0;
+      gap: 0;
     }
-  .boxResp{
-    margin: auto;
+
+  .informacoes,.exercicio{
+    margin-left: 20px;
   }
+  .objetivo{
+    margin-left: 20px ;
+  }
+
+  .boxResp{
+    align-items: normal;
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  .boxResp > p{
+    height: 30px;
+  }
+
+
 
 }
