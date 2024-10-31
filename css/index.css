@@ -166,7 +166,7 @@ form {
   width: 85px;
 }
 
-@media(max-width: 425px) {
+@media(max-width: 440px) {
   .box-container {
     width: 330px;
     height: 560px;
