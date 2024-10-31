@@ -157,7 +157,14 @@ form {
   border-radius: 6px;
 
 }
-
+#tbm,
+#gastCal,
+.deficit {
+  border-bottom: 1px solid;
+  display: inline-block;
+  text-align: center;
+  width: 85px;
+}
 
 @media(max-width: 425px) {
   .box-container {
@@ -203,13 +210,6 @@ form {
     border-bottom: 1px solid;
   }
 
-  #tbm,
-  #gastCal,
-  .deficit {
-    border-bottom: 1px solid;
-    display: inline-block;
-    text-align: center;
-    width: 85px;
-  }
+
 
 }

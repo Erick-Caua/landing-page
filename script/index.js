@@ -15,8 +15,6 @@ calcular.addEventListener("click", (e) => {
   let atividadeFisica = frm.exercicio.value
   let objetivo = frm.objetivo.value
 
-
-
   if (idade === '' || peso === '' || sexo === '' || altura === '' || atividadeFisica === "" || objetivo === "") {
 
     alert(`Preencha todos os campos`)
